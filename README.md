@@ -1,2 +1,105 @@
-# simple-weather-checker
-This is a simple C program/code that check how's the weather.
+# Simple Weather Checker &nbsp;![Language](https://img.shields.io/badge/language-C-blue) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
+A beginner-friendly C program that checks if it is sunny, cloudy, or rainy based on user input.  
+Perfect for learning about conditionals, user input, and console programs in C.
+
+---
+
+## 📑 Table of Contents
+1. [Features](#features)
+2. [Quick Start](#quick-start)
+3. [Example Session](#example-session)
+4. [Code Analysis](#code-analysis)
+5. [Learning Objectives](#learning-objectives)
+6. [Improvements & Roadmap](#improvements--roadmap)
+7. [Contributing](#contributing)
+8. [License](#license)
+
+---
+
+## ✨ Features
+
+| Category        | Details                  |
+|-----------------|--------------------------|
+| **Language**    | C (ISO C99)              |
+| **Interaction** | User selects weather type|
+| **Platforms**   | Linux, Windows, macOS    |
+| **Footprint**   |   &lt;10KB               |
+| **Educational** | Models conditionals, branching|
+
+---
+
+## 🚀 Quick Start
+
+Clone and compile with any C99-compatible compiler:
+
+```
+git clone https://github.com/0PKunal/simple-weather-checker.git
+cd simple-weather-checker
+gcc -o weather_checker weather_checker.c
+./weather_checker
+```
+Or on Windows (with MinGW):
+```
+gcc -o weather_checker.exe weather_checker.c
+weather_checker.exe
+```
+
+---
+
+## 💻 Example Session
+
+```
+What is the weather like? (1: Sunny, 2: Cloudy, 3: Rainy): 2
+It's a bit gloomy today. Don't forget your umbrella!
+```
+(Messages may vary depending on your menu design.)
+
+---
+
+## 🔍 Code Analysis
+
+- **Input**: Reads an integer (1, 2, or 3) representing weather.
+- **Branching**: Uses if-else or switch statements.
+- **Output**: Prints a message for each weather type.
+- **Robustness**: Minimal input validation; entering other values may behave unpredictably.
+
+---
+
+## 🎯 Learning Objectives
+
+- Practice with user input via `scanf`.
+- Gain experience with if-else or switch-case structures.
+- Understand how to write simple console-based interactive programs.
+- Recognize the importance of input validation and user guidance.
+
+---
+
+## 🛠️ Improvements & Roadmap
+
+| Priority | Enhancement                                        | Why?             |
+|----------|----------------------------------------------------|------------------|
+| High     | Input validation for out-of-range values            | Robustness       |
+| Medium   | Use enums and better prompts                        | Readability      |
+| Medium   | Accept both numeric and text input (`sunny`, etc.)  | Usability        |
+| Low      | Localize output messages                            | Internationalize|
+
+**Sample code improvement:**
+- Use `fgets` instead of `scanf` for safer input.
+- Provide clear error messages for invalid choices.
+
+---
+
+## 🤝 Contributing
+
+- Fork this repo and create a feature branch:  
+  `git checkout -b feature/improvement`
+- Use clear comments and one statement per line.
+- Check for compilation warnings with `-Wall -Wextra`.
+- Open a Pull Request with a clear description.
+
+---
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for details.
